@@ -1,6 +1,6 @@
 {
-  "name": "react-native-background-timer",
-  "version": "2.4.1",
+  "name": "@react-native-oh-tpl/react-native-background-timer",
+  "version": "2.4.1-0.0.1",
   "description": "Emit event periodically (even when app is in the background)",
   "keywords": [
     "react-native",
@@ -50,5 +50,13 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "harmony": {
+    "alias": "react-native-background-timer",
+    "codegenConfig": {
+      "specPaths": [
+        "./src"
+      ]
+    }
   }
 }
