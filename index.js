@@ -4,9 +4,10 @@ import {
   NativeEventEmitter,
   NativeModules,
   Platform,
+  TurboModuleRegistry,
 } from 'react-native';
 
-const { RNBackgroundTimer } = NativeModules;
+const RNBackgroundTimer = TurboModuleRegistry ? TurboModuleRegistry.get('BackgroundTimerTurboModule') : NativeModules.BackgroundTimer;
 const Emitter = new NativeEventEmitter(RNBackgroundTimer);
 
 class BackgroundTimer {
@@ -41,6 +42,7 @@ class BackgroundTimer {
     const EventEmitter = Platform.select({
       ios: () => NativeAppEventEmitter,
       android: () => DeviceEventEmitter,
+	    harmony: () => DeviceEventEmitter,
     })();
     this.start(0);
     this.backgroundListener = EventEmitter.addListener(
