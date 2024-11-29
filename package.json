@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-tpl/react-native-background-timer",
-  "version": "2.4.1-0.0.1",
+  "version": "2.4.1-0.0.2",
   "description": "Emit event periodically (even when app is in the background)",
   "keywords": [
     "react-native",

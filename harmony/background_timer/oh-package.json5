@@ -1,6 +1,6 @@
 {
-  "name": "background_timer",
-  "version": "1.0.0",
+  "name": "@react-native-oh-tpl/react-native-background-timer",
+  "version": "2.4.1-0.0.2",
   "description": "Please describe the basic information.",
   "main": "Index.ets",
   "author": "",
